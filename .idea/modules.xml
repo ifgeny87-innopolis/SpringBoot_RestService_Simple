@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RestfuL_Project.iml" filepath="$PROJECT_DIR$/RestfuL_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restfule.iml" filepath="$PROJECT_DIR$/.idea/modules/restfule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restfule_main.iml" filepath="$PROJECT_DIR$/.idea/modules/restfule_main.iml" group="restfule" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/restfule_test.iml" filepath="$PROJECT_DIR$/.idea/modules/restfule_test.iml" group="restfule" />
+    </modules>
+  </component>
+</project>

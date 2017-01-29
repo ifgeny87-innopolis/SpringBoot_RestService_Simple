@@ -1,0 +1,55 @@
+group 'innopolis'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.4.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+
+jar {
+    baseName = 'rest-test'
+    version = '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    // Guava
+    compile 'com.google.guava:guava:21.0'
+
+    // Logging
+    compile 'org.slf4j:slf4j-api:1.7.21'
+//    compile 'org.slf4j:slf4j-log4j12:1.7.21'
+    compile 'log4j:log4j:1.2.17'
+
+    // JSP
+    compile 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    compile 'javax.servlet:jstl'
+//    compile 'org.springframework.boot:spring-boot-starter-tomcat'
+//    compile 'org.eclipse.jdt.core.compiler:ecj:4.6.1'
+//    compile 'org.webjars:bootstrap:3.3.7'
+
+    // Testing
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+    compile 'org.springframework:spring-test:4.3.5.RELEASE'
+
+    // Spring
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
